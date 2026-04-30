@@ -274,8 +274,8 @@ body {
 .lang-bar-fill { height: 100%; border-radius: 10px; }
 
 /* ── REFERENCES ── */
-.ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-.ref-card { padding: 22px 24px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.02); transition: border-color 0.25s; position: relative; overflow: hidden; }
+.ref-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; width: 100%; }
+.ref-card { width: 100%; box-sizing: border-box; padding: 22px 24px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.02); transition: border-color 0.25s; position: relative; overflow: hidden; }
 .ref-card:hover { border-color: rgba(0,212,255,0.25); }
 .ref-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; }
 .ref-c1::before { background: var(--grad1); }
