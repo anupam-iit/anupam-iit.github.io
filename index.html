@@ -212,7 +212,7 @@ body {
   align-items: center;
   gap: 7px;
   font-size: 0.8rem;
-  color: var(--muted);
+  color: #dfebe4;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -251,18 +251,15 @@ body {
 
 .obj-label {
   font-family: 'Syne', sans-serif;
-  font-size: 0.65rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--c1);
-  margin-bottom: 12px;
+  color: #ffff;
 }
-
+  
 .obj-text {
   font-size: 0.95rem;
   line-height: 1.85;
-  color: #b0bec5;
+  color: #dfebe4;
   font-weight: 300;
 }
 
@@ -328,7 +325,7 @@ body {
 .sec-count {
   font-size: 0.72rem;
   font-weight: 500;
-  color: var(--muted);
+  color: #dfebe4;
   margin-top: 2px;
 }
 
@@ -487,7 +484,7 @@ body {
 
 .proj-name {
   font-size: 0.77rem;
-  color: var(--muted);
+  color: #dfebe4;
   margin-top: 6px;
   line-height: 1.5;
 }
@@ -562,7 +559,7 @@ body {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #dfebe4;
   margin-bottom: 5px;
 }
 
@@ -745,8 +742,8 @@ body {
 .ref-c1::before { background: var(--grad1); }
 .ref-c2::before { background: var(--grad3); }
 
-.ref-name { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: white; }
-.ref-role-text { font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
+.ref-name { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: #dfebe4; }
+.ref-role-text { font-size: 0.78rem; color: #dfebe4; margin-top: 3px; }
 .ref-company { font-size: 0.78rem; font-weight: 600; color: var(--c1); margin-top: 2px; }
 
 .ref-contacts { margin-top: 14px; display: flex; flex-direction: column; gap: 5px; }
@@ -756,7 +753,7 @@ body {
   align-items: center;
   gap: 8px;
   font-size: 0.76rem;
-  color: var(--muted);
+  color: #dfebe4;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -789,14 +786,12 @@ body {
   font-family: 'Syne', sans-serif;
   font-size: 2rem;
   font-weight: 800;
-  background: var(--grad1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: #ffff;
   background-clip: text;
-  line-height: 1;
+  line-height: 1.5;
 }
 
-.stat-label { font-size: 0.72rem; color: var(--muted); margin-top: 6px; font-weight: 500; letter-spacing: 0.5px; }
+.stat-label { font-size: 0.72rem; color: #dfebe4; margin-top: 6px; font-weight: 500; letter-spacing: 0.5px; }
 
 /* ── FOOTER ── */
 footer {
@@ -935,7 +930,6 @@ footer {
     <div class="photo-wrap">
       <div class="photo-ring">
         <div class="photo-inner">
-          <!-- Replace the src below with your actual photo path or base64 -->
           <img src="Anupam_Roy.jpg" alt="Anupam Roy"
             onerror="this.style.display='none'; this.parentNode.innerHTML='📷<br>Add your<br>photo here';">
         </div>
@@ -946,15 +940,17 @@ footer {
     <div class="hero-text">
       <div class="name-line">ANUPAM ROY</span></div>
       <div class="title-row">
-        <span class="title-pill">Project Manager</span>
-        <span class="title-pill">Business Analysis</span>
-        <span class="title-pill">B2G Expert</span>
+        <span class="title-pill">Project Management</span>
+        <span class="title-pill">Agile & Scrum</span>
+        <span class="title-pill">B2G & B2B</span>
       </div>
       <div class="cert-row">
-        <span class="cert cert-1">CSPO—Scrum Alliance</span>
-        <span class="cert cert-1">PMPC—IBA,DUe</span>
-        <span class="cert cert-1">HRMC—IBA,DU</span>
-        <span class="cert cert-3">HRMC—IBA,DU</span>
+        <span class="cert cert-2">CSPO—Scrum Alliance</span>
+        <span class="cert cert-2">PMPC—IBA,DU</span>
+        <span class="cert cert-2">HRMC—IBA,DU</span>
+		<span class="cert cert-2">IoT—BHTPA</span>
+		<span class="cert cert-2">EGP—CPTU</span>
+        
       </div>
       <div class="contacts-row">
         <a class="contact-link" href="tel:+8801723928176">
@@ -1017,7 +1013,7 @@ footer {
         </div>
         <div>
           <div class="sec-title">Professional Experience</div>
-          <div class="sec-count">4 positions · 10 years total</div>
+          <div class="sec-count">4 positions · 10 years+ total</div>
         </div>
       </div>
       <div class="chevron open"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
@@ -1030,17 +1026,17 @@ footer {
           <div class="exp-top">
             <div>
               <div class="exp-role">Project Manager</div>
-              <div class="exp-company" style="color:var(--c1)">Divine IT Limited · Full Time</div>
+              <div class="exp-company" style="color:var(--c4)">Divine IT Limited</div>
             </div>
-            <span class="exp-period-tag" style="background:rgba(0,212,255,0.1);color:var(--c1)">Sep 2020 — Present</span>
+            <span class="exp-period-tag" style="background:rgba(16,185,129,0.1);color:var(--c4)">Sep 2020 — Present</span>
           </div>
           <ul class="exp-bullets" style="color:#7a9db8">
-            <li style="color:#7a9db8">Planning and scheduling projects with defined timelines and resources</li>
-            <li style="color:#7a9db8">Leading cross-functional teams to meet project goals</li>
-            <li style="color:#7a9db8">Communicating effectively with stakeholders and clients</li>
-            <li style="color:#7a9db8">Identifying, assessing, and mitigating project risks</li>
-            <li style="color:#7a9db8">Managing scope and handling change requests efficiently</li>
-            <li style="color:#7a9db8">Monitoring progress and reporting project status regularly</li>
+            <li style="color:#dfebe4">Planning and scheduling projects with defined timelines and resources</li>
+            <li style="color:#dfebe4">Leading cross-functional teams to meet project goals</li>
+            <li style="color:#dfebe4">Communicating effectively with stakeholders and clients</li>
+            <li style="color:#dfebe4">Identifying, assessing, and mitigating project risks</li>
+            <li style="color:#dfebe4">Managing scope and handling change requests efficiently</li>
+            <li style="color:#dfebe4">Monitoring progress and reporting project status regularly</li>
           </ul>
         </div>
 
@@ -1053,10 +1049,10 @@ footer {
             <span class="exp-period-tag" style="background:rgba(16,185,129,0.1);color:var(--c4)">Jul 2018 — Aug 2020</span>
           </div>
           <ul class="exp-bullets">
-            <li>Eliciting, analyzing, and documenting complex business requirements</li>
-            <li>Leading solution design aligned with business objectives</li>
-            <li>Facilitating communication between stakeholders and technical teams</li>
-            <li>Supporting product development with data-driven insights</li>
+            <li style="color:#dfebe4">Eliciting, analyzing, and documenting complex business requirements</li>
+            <li style="color:#dfebe4">Leading solution design aligned with business objectives</li>
+            <li style="color:#dfebe4">Facilitating communication between stakeholders and technical teams</li>
+            <li style="color:#dfebe4">Supporting product development with data-driven insights</li>
           </ul>
         </div>
 
@@ -1064,15 +1060,15 @@ footer {
           <div class="exp-top">
             <div>
               <div class="exp-role">Business Analyst</div>
-              <div class="exp-company" style="color:var(--c3)">Divine IT Limited</div>
+              <div class="exp-company" style="color:var(--c4)">Divine IT Limited</div>
             </div>
-            <span class="exp-period-tag" style="background:rgba(245,158,11,0.1);color:var(--c3)">Aug 2015 — Jun 2018</span>
+            <span class="exp-period-tag" style="background:rgba(16,185,129,0.1);color:var(--c4)">Aug 2015 — Jun 2018</span>
           </div>
           <ul class="exp-bullets">
-            <li>Gathering and documenting business requirements from stakeholders</li>
-            <li>Analyzing processes and identifying improvement areas</li>
-            <li>Collaborating with teams to design effective solutions</li>
-            <li>Supporting decision-making through data analysis and reporting</li>
+            <li style="color:#dfebe4">Gathering and documenting business requirements from stakeholders</li>
+            <li style="color:#dfebe4">Analyzing processes and identifying improvement areas</li>
+            <li style="color:#dfebe4">Collaborating with teams to design effective solutions</li>
+            <li style="color:#dfebe4">Supporting decision-making through data analysis and reporting</li>
           </ul>
         </div>
 
@@ -1080,13 +1076,13 @@ footer {
           <div class="exp-top">
             <div>
               <div class="exp-role">Senior Teacher — English</div>
-              <div class="exp-company" style="color:var(--c2)">Ideal Model Academy · Full Time</div>
+              <div class="exp-company" style="color:var(--c4)">Ideal Model Academy</div>
             </div>
-            <span class="exp-period-tag" style="background:rgba(124,58,237,0.1);color:var(--c2)">Jan 2014 — Jul 2015</span>
+            <span class="exp-period-tag" style="background:rgba(16,185,129,0.1);color:var(--c4)">Jan 2014 — Jul 2015</span>
           </div>
           <ul class="exp-bullets">
-            <li>Providing lectures and planning lecture schedules</li>
-            <li>Preparing class materials and weekly examination questions</li>
+            <li style="color:#dfebe4">Providing lectures and planning lecture schedules</li>
+            <li style="color:#dfebe4">Preparing class materials and weekly examination questions</li>
           </ul>
         </div>
 
@@ -1113,23 +1109,23 @@ footer {
       <div class="sec-content">
         <div class="projects-grid">
 
-          <div class="proj-card pc1">
+          <div class="proj-card pc3">
             <div class="proj-client">Dhaka Stock Exchange PLC (DSE)</div>
             <div class="proj-name">Supply, Installation, Integration, Implementation, Training & Support of ERP</div>
             <div class="proj-tags">
               <span class="ptag ptag-period">2025 — Ongoing</span>
-              <span class="ptag ptag-value">৳71,50,755</span>
-              <span class="ptag ptag-role">Project Manager</span>
+              <span class="ptag ptag-period">BDT 71,50,755</span>
+              <span class="ptag ptag-value">Project Manager</span>
             </div>
           </div>
 
-          <div class="proj-card pc2">
+          <div class="proj-card pc3">
             <div class="proj-client">Bangladesh Bureau of Statistics (BBS)</div>
             <div class="proj-name">Mobile & Web Apps for Data Collection, Management and Reporting for SVRS</div>
             <div class="proj-tags">
               <span class="ptag ptag-period">2024 — 2025</span>
-              <span class="ptag ptag-value">৳1,17,76,471</span>
-              <span class="ptag ptag-role">Project Manager</span>
+              <span class="ptag ptag-period">BDT 1,17,76,471</span>
+              <span class="ptag ptag-value">Project Manager</span>
             </div>
           </div>
 
@@ -1138,78 +1134,78 @@ footer {
             <div class="proj-name">GSAT Smart Classroom & Aviation Security and Facilitation Shelf for CAAB</div>
             <div class="proj-tags">
               <span class="ptag ptag-period">2023 — 2024</span>
-              <span class="ptag ptag-value">৳3,08,46,000</span>
-              <span class="ptag ptag-role">Project Manager</span>
+              <span class="ptag ptag-period">BDT 3,08,46,000</span>
+              <span class="ptag ptag-value">Project Manager</span>
             </div>
           </div>
 
-          <div class="proj-card pc4">
+          <div class="proj-card pc3">
             <div class="proj-client">Titas Gas Transmission & Distribution Co.</div>
             <div class="proj-name">Procurement of Hardware & Related Services for Data Center of TGTDCL</div>
             <div class="proj-tags">
               <span class="ptag ptag-period">2023 — 2024</span>
-              <span class="ptag ptag-value">৳4,14,89,200</span>
-              <span class="ptag ptag-role">Project Manager</span>
+              <span class="ptag ptag-period">BDT 4,14,89,200</span>
+              <span class="ptag ptag-value">Project Manager</span>
             </div>
           </div>
 
-          <div class="proj-card pc5">
+          <div class="proj-card pc3">
             <div class="proj-client">National Board of Revenue (NBR)</div>
             <div class="proj-name">File Archiving and Document Management Project for NBR</div>
             <div class="proj-tags">
               <span class="ptag ptag-period">2022 — 2023</span>
-              <span class="ptag ptag-value">৳28,06,854</span>
-              <span class="ptag ptag-role">Project Manager</span>
+              <span class="ptag ptag-period">BDT 28,06,854</span>
+              <span class="ptag ptag-value">Project Manager</span>
             </div>
           </div>
 
-          <div class="proj-card pc6">
+          <div class="proj-card pc3">
             <div class="proj-client">Bangladesh Energy Regulatory Commission</div>
             <div class="proj-name">Web-Based Integrated Uniform System of Accounts for Gas Sector</div>
             <div class="proj-tags">
               <span class="ptag ptag-period">2021 — 2022</span>
-              <span class="ptag ptag-value">৳1,80,00,000</span>
-              <span class="ptag ptag-role">Project Manager</span>
+              <span class="ptag ptag-period">BDT 1,80,00,000</span>
+              <span class="ptag ptag-value">Project Manager</span>
             </div>
           </div>
 
-          <div class="proj-card pc7">
+          <div class="proj-card pc3">
             <div class="proj-client">Bangladesh Land Port Authority (BLPA)</div>
             <div class="proj-name">Development of e-Port Management System</div>
             <div class="proj-tags">
               <span class="ptag ptag-period">2020 — 2021</span>
-              <span class="ptag ptag-value">৳1,80,00,000</span>
-              <span class="ptag ptag-role">Project Manager</span>
+              <span class="ptag ptag-period">BDT 1,80,00,000</span>
+              <span class="ptag ptag-value">Project Manager</span>
             </div>
           </div>
 
-          <div class="proj-card pc8">
+          <div class="proj-card pc3">
             <div class="proj-client">Chittagong University</div>
             <div class="proj-name">HRMS and Payroll Module with Provident Fund (CPF and GPF)</div>
             <div class="proj-tags">
               <span class="ptag ptag-period">2019 — 2020</span>
-              <span class="ptag ptag-value">৳50,00,000</span>
-              <span class="ptag ptag-role">Sr. Business Analyst</span>
+              <span class="ptag ptag-period">BDT 50,00,000</span>
+              <span class="ptag ptag-value">Sr. Business Analyst</span>
             </div>
           </div>
 
-          <div class="proj-card pc9">
+          <div class="proj-card pc3">
             <div class="proj-client">Bangladesh Krishi Bank</div>
             <div class="proj-name">Management Information System (MIS)</div>
             <div class="proj-tags">
               <span class="ptag ptag-period">2018 — 2019</span>
-              <span class="ptag ptag-value">৳70,00,000</span>
-              <span class="ptag ptag-role">Sr. Business Analyst</span>
+              <span class="ptag ptag-period">BDT 70,00,000</span>
+              <span class="ptag ptag-value">Sr. Business Analyst</span>
             </div>
           </div>
 
-          <div class="proj-card pc10">
+          <div class="proj-card pc3">
             <div class="proj-client">Titas Gas Transmission & Distribution Co.</div>
             <div class="proj-name">Procurement of ERP (Gas), Design of Data Center & Data Migration</div>
             <div class="proj-tags">
               <span class="ptag ptag-period">2016 — 2018</span>
-              <span class="ptag ptag-value">৳9,89,80,200</span>
-              <span class="ptag ptag-role">Business Analyst</span>
+              <span class="ptag ptag-period">BDT 9,89,80,200</span>
+              <span class="ptag ptag-value">Business Analyst</span>
             </div>
           </div>
 
@@ -1296,7 +1292,7 @@ footer {
         </div>
         <div>
           <div class="sec-title">Education</div>
-          <div class="sec-count">2 degrees</div>
+          <div class="sec-count">4 degrees</div>
         </div>
       </div>
       <div class="chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
@@ -1305,15 +1301,25 @@ footer {
       <div class="sec-divider"></div>
       <div class="sec-content">
         <div class="edu-grid">
+		    <div class="edu-card edu-c1">
+              <span class="edu-year-badge" style="background:rgba(16,185,129,0.12);color:var(--c4)">2026</span>
+              <div class="edu-degree">Professional Masters in Information & Technology (PMIT)</div>
+              <div class="edu-school" style="color:var(--c4)">Jahangirnagar University (JU)</div>
+          </div>
           <div class="edu-card edu-c1">
             <span class="edu-year-badge" style="background:rgba(16,185,129,0.12);color:var(--c4)">2025</span>
             <div class="edu-degree">Post Graduation Diploma in Information & Technology (PGDIT)</div>
-            <div class="edu-school" style="color:var(--c4)">Jahangirnagar University</div>
+            <div class="edu-school" style="color:var(--c4)">Jahangirnagar University (JU)</div>
           </div>
-          <div class="edu-card edu-c2">
-            <span class="edu-year-badge" style="background:rgba(59,130,246,0.12);color:var(--c6)">2011</span>
+          <div class="edu-card edu-c1">
+            <span class="edu-year-badge" style="background:rgba(16,185,129,0.12);color:var(--c4)">2011</span>
             <div class="edu-degree">Master of Arts in English</div>
-            <div class="edu-school" style="color:var(--c6)">Shahjalal University of Science and Technology (SUST)</div>
+            <div class="edu-school" style="color:var(--c4)">Shahjalal University of Science and Technology (SUST)</div>
+          </div>
+		  <div class="edu-card edu-c1">
+            <span class="edu-year-badge" style="background:rgba(16,185,129,0.12);color:var(--c4)">2010</span>
+            <div class="edu-degree">Bachelor of Arts in English</div>
+            <div class="edu-school" style="color:var(--c4)">Shahjalal University of Science and Technology (SUST)</div>
           </div>
         </div>
       </div>
@@ -1459,7 +1465,7 @@ footer {
           </div>
           <div class="ref-card ref-c2">
             <div class="ref-name">Nadimul Haque Bhuiyan</div>
-            <div class="ref-role-text">Sr. Software Engineer</div>
+            <div class="ref-role-text">Tech Lead</div>
             <div class="ref-company">Brac IT Limited</div>
             <div class="ref-contacts">
               <a class="ref-link" href="mailto:nadim.hq321@gmail.com">
@@ -1485,7 +1491,7 @@ footer {
     <div class="footer-top">
       <div>
         <div class="footer-name">ANUPAM ROY</div>
-        <div class="footer-tagline">Project Manager · Divine IT Limited · Dhaka, Bangladesh</div>
+        <div class="footer-tagline">Project Manager · Dhaka, Bangladesh</div>
       </div>
       <div class="social-links">
         <!-- Update hrefs below with your actual profile URLs -->
@@ -1550,26 +1556,6 @@ footer {
     el.style.transform = 'translateY(24px)';
     el.style.transition = `opacity 0.5s ${i * 0.07}s ease, transform 0.5s ${i * 0.07}s ease`;
     observer.observe(el);
-  });
-
-  // PHOTO UPLOAD SUPPORT — click photo to change it
-  const photoInner = document.querySelector('.photo-inner');
-  photoInner.style.cursor = 'pointer';
-  photoInner.title = 'Click to upload your photo';
-  photoInner.addEventListener('click', () => {
-    const inp = document.createElement('input');
-    inp.type = 'file';
-    inp.accept = 'image/*';
-    inp.onchange = e => {
-      const file = e.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = ev => {
-        photoInner.innerHTML = `<img src="${ev.target.result}" alt="Anupam Roy" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;">`;
-      };
-      reader.readAsDataURL(file);
-    };
-    inp.click();
   });
 </script>
 </body>
