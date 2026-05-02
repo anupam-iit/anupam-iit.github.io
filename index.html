@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LKB677808E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LKB677808E');
+</script>
 <title>Anupam Roy — Project Manager</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -1149,13 +1158,7 @@ footer { position: relative; z-index: 1; margin-top: 80px; background: rgba(0,0,
     </div>
     <div class="footer-bottom">
   <div class="copyright">© <span id="yr"></span> <span>Anupam Roy</span>. All rights reserved.</div>
-  
-  <!-- HIT COUNTER -->
-  <div class="hit-counter">
-    <div class="hit-dot"></div>
-    <span>Hit Count: <span id="vis-count">0001</span></span>
-  </div>
-  
+   
 </footer>
    
 <!-- SCROLL TO TOP -->
@@ -1210,18 +1213,7 @@ footer { position: relative; z-index: 1; margin-top: 80px; background: rgba(0,0,
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeLightbox();
   });
-  (function() {
-    const countElement = document.getElementById('vis-count');
-    // Retrieve previous count or default to 0
-    let count = localStorage.getItem('site_visits') || 0;
-    
-    // Increment and save
-    count = parseInt(count) + 1;
-    localStorage.setItem('site_visits', count);
-    
-    // Display with leading zeros
-    countElement.innerText = count.toString().padStart(4, '0');
-})();
+ 
 </script>
 </body>
 </html>
