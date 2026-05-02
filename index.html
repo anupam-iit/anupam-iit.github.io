@@ -144,23 +144,56 @@ body {
 .contact-link svg { width: 14px; height: 14px; }
 
 /* ── OBJECTIVE ── */
-.objective-section { position: relative; z-index: 1; max-width: 980px; margin: 48px auto 0; padding: 0 24px; }
+
+.objective-section { 
+  position: relative; 
+  z-index: 1; 
+  max-width: 980px; 
+  margin: 48px auto 0; 
+  padding: 0 24px; 
+}
 
 .obj-card {
-  border-radius: 16px; padding: 28px 32px;
+  border-radius: 16px; 
+  padding: 32px 40px; 
   background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(124,58,237,0.08));
   border: 1px solid rgba(0,212,255,0.15);
-  position: relative; overflow: hidden;
+  position: relative; 
+  overflow: hidden;
+  /* Remove text-align: center from here to allow left alignment */
 }
 
 .obj-card::before {
-  content: '"'; position: absolute; top: -10px; left: 20px;
-  font-size: 8rem; font-family: 'Syne', serif;
-  color: rgba(0,212,255,0.06); line-height: 1; pointer-events: none;
+  content: '"'; 
+  position: absolute; 
+  top: -10px; 
+  left: 20px;
+  font-size: 8rem; 
+  font-family: 'Syne', serif;
+  color: rgba(0,212,255,0.06); 
+  line-height: 1; 
+  pointer-events: none;
 }
 
-.obj-label { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: #fff; }
-.obj-text { font-size: 0.95rem; line-height: 1.85; color: #dfebe4; font-weight: 300; }
+.obj-label { 
+  font-family: 'Syne', sans-serif; 
+  font-size: 1.1rem; 
+  font-weight: 700; 
+  color: #fff; 
+  margin-bottom: 16px; 
+  display: block;
+  text-align: left; /* Aligns the "Career Objective" text to the left */
+}
+
+.obj-text { 
+  font-size: 0.95rem; 
+  line-height: 1.85; 
+  color: #dfebe4; 
+  font-weight: 300; 
+  text-align: justify; /* Keeps the body text marginalized/justified */
+  text-justify: inter-word; 
+  margin: 0; /* Ensures it starts from the left margin of the card */
+}
 
 /* ── STATS ── */
 .stats-bar { position: relative; z-index: 1; max-width: 980px; margin: 40px auto 0; padding: 0 24px; }
@@ -424,6 +457,38 @@ footer { position: relative; z-index: 1; margin-top: 80px; background: rgba(0,0,
   .footer-top { flex-direction: column; align-items: flex-start; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
+.hit-counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    color: var(--muted);
+}
+
+.hit-dot {
+    width: 6px;
+    height: 6px;
+    background: #00d4ff; /* Your theme color */
+    border-radius: 50%;
+    box-shadow: 0 0 8px #00d4ff;
+    animation: pulse 2s infinite;
+}
+
+#vis-count {
+    color: white;
+    font-weight: 700;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
 </style>
 </head>
 <body>
@@ -1082,14 +1147,17 @@ footer { position: relative; z-index: 1; margin-top: 80px; background: rgba(0,0,
         </a>
       </div>
     </div>
-    <div class="footer-divider"></div>
     <div class="footer-bottom">
-      <div class="copyright">© <span id="yr"></span> <span>Anupam Roy</span>. All rights reserved.</div>
-      <div class="made-with">Developed by Anupam</div>
-    </div>
+  <div class="copyright">© <span id="yr"></span> <span>Anupam Roy</span>. All rights reserved.</div>
+  
+  <!-- HIT COUNTER -->
+  <div class="hit-counter">
+    <div class="hit-dot"></div>
+    <span>Hit Count: <span id="vis-count">0001</span></span>
   </div>
+  
 </footer>
-
+   
 <!-- SCROLL TO TOP -->
 <button class="scroll-top" id="scrollBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
   <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
@@ -1142,6 +1210,18 @@ footer { position: relative; z-index: 1; margin-top: 80px; background: rgba(0,0,
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeLightbox();
   });
+  (function() {
+    const countElement = document.getElementById('vis-count');
+    // Retrieve previous count or default to 0
+    let count = localStorage.getItem('site_visits') || 0;
+    
+    // Increment and save
+    count = parseInt(count) + 1;
+    localStorage.setItem('site_visits', count);
+    
+    // Display with leading zeros
+    countElement.innerText = count.toString().padStart(4, '0');
+})();
 </script>
 </body>
 </html>
